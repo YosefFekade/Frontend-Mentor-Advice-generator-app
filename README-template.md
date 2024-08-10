@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/YosefFekade/Frontend-Mentor-Advice-generator-app)
+- Live Site URL: (https://yoseffekade.github.io/Frontend-Mentor-Advice-generator-app/)
 
 ## My process
 -Started with connecting the API to the browser.
