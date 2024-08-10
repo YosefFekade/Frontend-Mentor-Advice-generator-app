@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    :root {
+    /* primary colors*/
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    /* Neutral colors*/
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+     body{
+      font-family: Manrope, sans-serif;
+      background-color: var(--Dark-Blue) ;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      
+    } 
+   .advicecard{
+      background-color: var(--Grayish-Blue);
+      flex-basis: 130px;
+      width: 380px;
+      border-radius: 5px;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+     }
+    #btn{
+      position: absolute;
+      top: 80%;
+      left: 40%;
+      margin-top: 20px;
+      background-color: var(--Neon-Green);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border-style: none;
+    } 
+    #advice{
+      flex-basis: 130px;
+      margin: 20px;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--Light-Cyan);
+      position: relative;
+    }
+    #adviceid{
+      color: var(--Neon-Green);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    #btn:hover {
+    box-shadow: 0 0 20px #00FF00; 
+   }
+
+    #btn:active {
+    background-color: #45a049; 
+    box-shadow: 0 0 20px #00FF00; 
+   }
+
+
+  </style>
+</head>
+<body>
+ 
+  <div class="advicecard">
+     <p id="adviceid"><!-- Advice ID goes here --></p>
+     <p  id="advice">"<!-- Advice text goes here -->"</p>
+     <button id="btn"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg></button>
+  </div>
+
+  <footer class="attribution a">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yosef Fekade</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
